@@ -1,0 +1,103 @@
+:root {
+  --red-primary: #780000;
+  --red-secondary: #c1121f;
+  --middle: #fdf0d5;
+  --blue-primary: #003049;
+  --blue-secondary: #669bbc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Comfortaa-Regular";
+  src: local("Comfortaa-Regular"), url("./font/Comfortaa-Regular.ttf") format("truetype");
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, a, p, button, input {
+  font-family: Comfortaa-Regular;
+}
+
+img {
+  width: 100%;
+}
+
+.headfoot{
+  background-color: var(--red-primary);
+  color: var(--middle);
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.search {
+  text-align: center;
+  
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--blue-primary);
+}
+
+a, p, button, input {
+  font-size: 1rem;
+}
+
+.galery {
+  border-top: solid var(--blue-primary) ;
+}
+/* /////////////////////////////////////////////
+              begining  768
+/////////////////////////////////////////////*/
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+  a, p, button, input, h3 {
+    font-size: 1.3rem;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .galery {
+    margin: 20px;
+  }
+}
+/* /////////////////////////////////////////////
+                768 end
+/////////////////////////////////////////////*/
+/* /////////////////////////////////////////////
+               begining 992
+/////////////////////////////////////////////*/
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4.6rem;
+  }
+  a, p, button, input, h3 {
+    font-size: 1.6rem;
+  }
+  .galery {
+    gap: 10px;
+    display: flex;
+  }
+
+}
+/* /////////////////////////////////////////////
+                992 end
+/////////////////////////////////////////////*/
